@@ -3,7 +3,7 @@
 MushroomPatcher is a utility mod for mod creators and users to add custom mushooms to the game.
 Once MushroomPatcher is installed and active, you can download as many mushroom-adding mods as you want, so long as they are created using the [Custom Mushroom Template](https://github.com/ChrisMzz/MudborneMods/tree/main/CustomMushroomTemplate).
 
-It is available on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3679325893).
+It is available on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3679319195).
 
 ## Notes
 
