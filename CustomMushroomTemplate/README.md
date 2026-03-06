@@ -37,7 +37,7 @@ Here is a typical `info`:
 ```lua
 info = {
     conditions = {1, 6, 'awake', 'mud', 'any', false},
-    buff = {'SUPPRESS {{TRAIT}}', 'x{{NUM}} {{TRAIT}}'},
+    buff = {'{{SUPPRESS}} {{TRAIT}}', 'x{{NUM}} {{TRAIT}}'},
     buff_col = {'trait_o', 'trait_s'},
     buff_mod = {'SUPRESS', '*2'},
     drops = {
@@ -53,9 +53,9 @@ info = {
  - `World` is either `awake` or `dream`
  - `Terrain` is either `grass`, `mud`, `water`, `inside` or `stagnant`
  - `TimeOfDay` is unused by the game as far as I'm aware; all mushrooms use `any`. Use at your own risk.
-- `buff` is a list of strings that determine how the buff will display. Typically `{{NUM}}` represents the number associated to the buff, `{{TRAIT}}` the trait, and then you can use `{{MIN}}` or `{{MAX}}`. Note that you can write any text here, like `SUPPRESS`.
+- `buff` is a list of strings that determine how the buff will display. Typically `{{NUM}}` represents the number associated to the buff, `{{TRAIT}}` the trait, and then you can use `{{SUPPRESS}}`, `{{MIN}}` or `{{MAX}}`. Note that you can also write any text here.
 - `buff_col` is a list of strings representing the traits buffed by the mushroom. Obviously, this is either `trait_a`, `trait_n`, `trait_o`, `trait_u`, `trait_r`, `trait_e`, or `trait_s`.
-- `buff_mod` is a list of the exact buff modifier. This is where it gets weird, for addition and subtraction of traits, use ➕ or ➖, followed by the number you want to add or subtract by. For multiplication you can just use `*`. For minimum, maximum and suppress, just write `MIN`, `MAX` or `SUPPRESS`, respectively.
+- `buff_mod` is a list of the exact buff modifier. This is where it gets weird, for addition and subtraction of traits, use ➕ or ➖, followed by the number you want to add or subtract by. For multiplication you can just use `*`. For minimum, maximum and suppress, just write `MIN`, `MAX` or `SUPRESS`, respectively. Note that the buff for `SUPRESS` only takes one P here; I believe this is due to a typo in the game code (check in the game files' `re_dictionary.lua` if you want to see for yourself!).
 - `drops` should always be a table with `dmin` as the minimum number of mushrooms obtained from picking one of these mushrooms up, and `dmax` being the maximum. 
 - `world` is the world this mushroom spawns in, either `awake` or `dream`. **Be warned** that setting a *condition* for a mushroom to only spawn in a world will make it unobtainable if you don't also make this field that same world (you, in principle, can't mix and match).
 
@@ -102,6 +102,7 @@ These correspond to, in order :
 - the mushroom hybrid item
 - the mushroom hybrid powder 
 
+I've included a `spritesheet.png` file with the original mushrooms' spritesheets, formatted as they are in-game, as well as a Python script `separator.py` that will dump them in the `dumps/` folder in the same format as what MushroomPatcher expects. You can draw your sprites in the same way the game does and then convert using the Python script if you prefer doing it that way.
 
 ## Finishing up
 
