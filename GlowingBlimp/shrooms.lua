@@ -20,6 +20,7 @@ return {
             lore1 = 'This mushroom looks puffy but is actually very dense.',
             lore2 = 'Its metabolism causes it to glow periodically.'
         },
+        colors = {'#b0517c', '#aa4658', '#80385d', '#aa4658', '#80385d', '#c27281'},
         sprite_path = '/glowingblimp_sprites.png',
         texture_path = '/glowingblimp_texture.png'
     },

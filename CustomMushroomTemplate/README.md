@@ -23,12 +23,13 @@ This is a list of all mushrooms that you are adding, where each of these `shroom
 {
     info = {...},
     locale = {...},
+    colors = {...},
     sprite_path = "...",
     texture_path = "..."
 },
 ```
 
-In a given mushroom, `info` contains all the information relevant to the game logic of the mushroom, `locale` contains the text associated to it, and then the `sprite_path` needs to specify the local path to the in-game sprites, while `texture_path` needs to specify the way the mushroom appears in the book.
+In a given mushroom, `info` contains all the information relevant to the game logic of the mushroom, `locale` contains the text associated to it, `colors` is a list of hexadecimal colors representing the mushroom, and then the `sprite_path` needs to specify the local path to the in-game sprites, while `texture_path` needs to specify the way the mushroom appears in the book.
 
 
 ## `info`
@@ -74,6 +75,15 @@ locale = {
 }
 ```
 The descriptions speak for themselves here.
+
+## `colors`
+
+The colors list looks something like this:
+```lua
+colors = {'#b0517c', '#aa4658', '#80385d', '#aa4658', '#80385d', '#c27281'}
+```
+
+If you're unfamiliar with hexadecimal encoding for RGB colors, consider using a Hex color picker online.
 
 ## Sprites
 

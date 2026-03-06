@@ -20,6 +20,7 @@ return {
             lore1 = 'Random fact about this mushroom',
             lore2 = 'Other random fact about this mushroom'
         },
+        colors = {'#b0517c', '#aa4658', '#80385d', '#aa4658', '#80385d', '#c27281'},
         sprite_path = '/shroom_sprites_template.png',
         texture_path = '/shroom_texture_template.png'
     },

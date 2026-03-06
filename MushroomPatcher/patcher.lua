@@ -113,7 +113,7 @@ local patcher = {
       }
 
       -- shroom colors ; still need to figure each one of those out
-      game.g.colors["mushroom" .. tostring(m)] = {tn.util.hexToRGB('#b0517c'),tn.util.hexToRGB('#aa4658'),tn.util.hexToRGB('#80385d'),tn.util.hexToRGB('#aa4658'),tn.util.hexToRGB('#80385d'),tn.util.hexToRGB('#c27281')}
+      game.g.colors["mushroom" .. tostring(m)] = {tn.util.hexToRGB(shroom.colors[1]),tn.util.hexToRGB(shroom.colors[2]),tn.util.hexToRGB(shroom.colors[3]),tn.util.hexToRGB(shroom.colors[4]),tn.util.hexToRGB(shroom.colors[5]),tn.util.hexToRGB(shroom.colors[6])}
 
       -- shroom descriptions
       game.g.locale["mushroom" .. tostring(m) .. "_name"] = shroom.locale.name
